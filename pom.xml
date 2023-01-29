@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.spothero</groupId>
-    <artifactId>PricingEngine</artifactId>
+    <artifactId>SpotHeroPricingEngine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -20,7 +20,7 @@
     </properties>
 
     <modules>
-        <module>rest</module>
+        <module>engine</module>
     </modules>
 
     <dependencies>
